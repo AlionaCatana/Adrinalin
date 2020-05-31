@@ -1,0 +1,209 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+li{
+    list-style: none;
+}
+ul{
+    padding: 0;
+}
+header{
+    height: 100vh;
+}
+.btn {
+    min-height: 50px; 
+    border-radius:0;
+    background: #1C110A;
+    color: #fff;
+    font-weight:600;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: #73492B !important;
+    color: white !important;
+}
+/* _____________________________________________________ */
+.navbar{
+    position: relative;
+    z-index: 3;
+}
+.navbar span{
+    font-size: 0.8em;
+}
+.navbar .tel{
+    text-decoration: none;
+    color: #1C110A;
+    font-weight: 700;
+}
+/* ________________________________________________________ */
+
+#headerbg{
+    background: url(img/2.jpg) no-repeat center;
+    background-size: cover;
+    background-position: 0 -50px, center;
+    background-attachment: relative;
+    height: 90vh;
+    width: 100%;
+}
+#headerbg h1{
+    color:  #fff;
+    text-shadow: 0 5px 10px #1C110A;
+    stroke-width: 2px;
+    font-size:4em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding-top: 3em;
+}
+#headerbg p{
+    color:  #fff;
+    text-shadow: 0 5px 10px #1C110A;
+    font-size:1.5em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    padding-top: 0.2em;
+}
+/* _________________________________________ */
+#AboutUs .img2{
+    background-image: url(img/comand.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* _____________________________________________ */
+
+#Classes{
+    min-height: 100vh;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+#Classes .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(100px, auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+
+}
+/* _Adaptive____________________ */
+@media (max-width: 1024px){
+    #Classes .container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 800px){
+    #Classes .container{
+        grid-template-columns: 1fr;
+    }
+    section .col-8{
+        text-align: center;
+    }
+}
+
+
+#Classes .container .box
+{
+    background-color: #333;
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    transition: 0.5s;
+}
+#Classes .container .box:hover
+{
+    background-color: #88816E;
+}
+#Classes .container .box img
+{
+    position: relative;
+    max-width: 16em;
+    margin-bottom: 10px;
+}
+
+/* __________________________________________________ */
+.container{
+    margin: auto;
+    margin-bottom: 5em;
+} 
+section .container>h1{
+    font-size: 2em;
+    font-weight: 700;
+    padding: 2em 0 0.35em 0;
+}
+section .container>h1+p{
+    margin-bottom: 1.5em;
+}
+section .container h2{
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: 2em 0 1em 0;
+}
+section p{
+    color: black;
+    line-height: 1.5em;
+}
+#Tariffs .col-8{
+    vertical-align: top;
+    box-sizing: border-box;
+    border: 1px solid #1C110A;
+    /* padding: 2em; */
+    transition: 0.5s;
+}
+#Tariffs div.col-8 span{
+    font-weight: 700;
+    margin: 1em 0;
+}
+#Tariffs div.col-8 span:first-of-type{
+    font-size: 2em;
+}
+#Tariffs div.col-8 p{
+    margin: 1em 0 3em 0;
+    font-size: 0.8em;
+    transition: 0.7s;
+}
+#Tariffs div.col-8>ul{
+    border-top: 1px solid #1C110A;
+}
+#Tariffs div.col-8 button{
+    border: none !important;
+}
+
+/* _________________HOVER________________ */
+#Tariffs div.col-8:hover{
+    background-color: #88816E;
+    border: none;
+    color: #fff;
+}
+#Tariffs div.col-8:hover>p{
+    color: #fff;
+}
+#Tariffs div.col-8:hover>button{
+    background-color: #fff;
+    color: #444;
+}
+/* _______________________________________ */
+
+#Tariffs div.col-8>ul>li{
+    margin: 2em 0 1em 0;
+}
+#Tariffs div.col-8>ul>li>i{
+    color: #1C110A;
+    font-size: 0.8em;
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+/* _______________________________________________ */
+
+footer {
+    padding: 6rem 0;
+    background-color: #222;
+}
+footer button{
+    border: none !important;
+}
